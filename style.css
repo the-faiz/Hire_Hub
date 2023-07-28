@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* navigation bar  */
+
+nav{
+    display:flex;
+}
+
+nav img{
+    height:80px;
+    width:80px;
+    margin-left: 30px;
+}
+
+nav h1{
+    margin:30px 0px;
+    font-weight: 5000;
+}
+
+.primary{
+    display:flex;
+    margin-left: 30px;
+}
+
+.primary li{
+    list-style: none;
+    margin:35px 20px;
+}
+
+.secondary{
+    display:none;
+}
+
+.navbtn{
+    position: absolute;
+    right:30px;
+}
+
+#btn3, #btn4{
+    padding:10px;
+    background-color: black;
+    color:white;
+    font-weight: 500;
+    border-radius: 10px;
+    margin:20px 10px;
+    height:45px;
+    width: 90px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px){
+    .primary{
+        display:none;
+    }
+}
+
+/* Main page1 */
+
+#page1{
+    display: flex;
+}
+
+#page1 img{
+    width:70vw;
+    height:auto;
+}
+
+#page1 #content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page1 #content h4{
+    margin:10px 0;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+#page1 #content h1{
+    font-size: 4rem;
+}
+
+#page1 #content .btn{
+    margin:10px 0px;
+}
+
+.btn button{
+    padding:10px;
+    background-color: #27CB8B;
+    color:white;
+    font-weight: 500;
+    border-radius: 10px;
+    margin:10px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1070px){
+    #page1 #content h1{
+        font-size: 3rem;
+    }  
+}
+
+@media screen and (max-width:900px){
+    #page1 #content h1{
+        font-size: 2rem;
+    } 
+    #page1 #content h4{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:660px){
+    .btn button{
+        font-size: 0.7rem;
+        margin:5px 5px;
+    }
+}
+
+@media screen and (max-width:550px){
+    #page1 #content h1{
+        font-size: 1.2rem;
+    } 
+    #page1 #content h4{
+        font-size: 0.7rem;
+    }
+}
+
+/* Main Page2 */
+
+#page2 h1{
+    text-align: center;
+    font-size: 4rem;
+    color:#27CB8B;
+    margin-top:50px;
+}
+
+#page2 h4{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#page2 .content{
+    display: grid;
+    gap: var(--size-3);
+    grid-auto-flow:column;
+    overflow-x:auto;
+    overscroll-behavior-inline: contain;
+    grid-gap: 10px;
+}
+
+
+#page2 .content li{
+    height:350px;
+    width:300px;
+    border-radius: 10px;
+    margin:10px 10px;
+    list-style: none;
+    border:1px solid #EFEFEF;
+    /* box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5); */
+    /* background-color: aliceblue; */
+}
+
+#page2 .content li:hover{
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+#page2 img{
+    width:auto;
+    height:30px;
+    margin-top:40px;
+    margin-left: 20px;
+}
+
+#page2 li span{
+    position: relative;
+    top:-10px;
+    margin-left:60px;
+    font-size: 1.2rem;
+    font-weight: 1000;
+}
+
+#page2 li h3{
+    margin-top: 10px;
+}
+
+.about{
+    margin:20px 10px;  
+}
+
+.applybtn{
+    background-color: black;
+    color: white;
+    padding:10px 10px;
+    margin:20px 100px;
+    border-radius: 10px;
+    width:100px;
+}
+
+/* Main page3 */
+
+/* #page3 {
+    background-image: url('https://ak.picdn.net/shutterstock/videos/27100651/thumb/1.jpg');
+} */
+
+#page3 h1{
+    margin-top: 50px;
+    margin-left: 20px;
+    color: #27CB8B;
+}
+
+#page3 .content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:100px 50px;
+}
+#page3 img{
+    height:60px;
+    width:auto;
+    border-radius: 100px;
+}
+
+#page3 li{
+    list-style: none;
+    /* border: 2px solid red; */
+    /* height:300px; */
+    width:50vw;
+    margin:10px 20px;
+    padding:10px 10px;
+}
+
+#page3 li:hover{
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+#page3 li span{
+    position: relative;
+    top:-18px;
+    font-weight: 800;
+}
+
+#page3 li p{
+    margin-top: 20px;
+}
+
+#page3 li button{
+    position: relative;
+    top:20px;
+    margin:10px 10px;
+    padding:10px 10px;
+    background-color: white;
+    border-radius: 10px;
+    color:#27CB8B;
+    font-weight: 1000;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#page3 li button:hover{
+    background-color:#27CB8B;
+    color: white;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:500px){
+    #page3 li{
+        width:90vw
+    }
+}
